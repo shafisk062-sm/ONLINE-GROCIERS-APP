@@ -1,6 +1,9 @@
-const API_URL = import.meta.env.VITE_API_URL || "/api";
+const API_URL = (import.meta.env.VITE_API_URL || (import.meta.env.DEV ? "/api" : "")).replace(/\/+$/, "");
 
 export async function api(path, options = {}, token) {
+  if (!API_URL) {
+    throw new Error("The store API is not configured. Set VITE_API_URL to your deployed API URL.");
+  }
   const headers = { "Content-Type": "application/json", ...options.headers };
   if (token) headers.Authorization = `Bearer ${token}`;
   let response;

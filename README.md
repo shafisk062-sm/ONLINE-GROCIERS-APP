@@ -41,7 +41,7 @@ MongoDB must be running and reachable before `npm run seed` or for real account,
 | `PORT` | Express port (default `5000`) |
 | `MONGODB_URI` | MongoDB connection string |
 | `JWT_SECRET` | Secret used to sign access tokens |
-| `CLIENT_ORIGIN` | Exact storefront origin allowed by API CORS |
+| `CLIENT_ORIGIN` / `CLIENT_ORIGINS` | Exact storefront origin(s) allowed by API CORS; use comma-separated origins in `CLIENT_ORIGINS` for production and Vercel previews |
 | `VITE_API_URL` | API base URL for the Vite frontend; use `/api` locally or the deployed API URL plus `/api` |
 | `ADMIN_NAME`, `ADMIN_EMAIL`, `ADMIN_PASSWORD` | Initial/admin seed credentials; use a unique strong password |
 | `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET` | Razorpay **test-mode** credentials in development |
@@ -68,9 +68,10 @@ Create a database/user, configure network access for the deployed API service, a
 ### Frontend on Vercel
 
 - Import the repository and use the project root.
-- Framework preset: Vite; build command: `npm run build`; output directory: `dist`.
-- Set `VITE_API_URL` to `https://<your-api-host>/api`.
-- Redeploy after changing frontend environment variables. Add the final Vercel origin to the API's `CLIENT_ORIGIN`.
+- `vercel.json` configures the Vite framework, `npm run build`, `dist` output, and SPA fallback for category and password-reset URLs.
+- In **Project → Settings → Environment Variables**, set `VITE_API_URL` to `https://<your-api-host>/api` for Production and Preview, then redeploy.
+- The Vercel project hosts the React frontend; the Express/MongoDB API must be deployed separately on Render or Railway. Without `VITE_API_URL`, the production frontend reports that its API is unconfigured and cannot load products or accept orders.
+- Set the API service's `CLIENT_ORIGINS` to the exact Vercel production URL and any preview URLs that need access. Changes to Vercel environment variables require a new deployment.
 
 ### Integrations
 
