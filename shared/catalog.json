@@ -1,0 +1,120 @@
+{
+  "categories": [
+    { "name": "Fruits", "icon": "🍊" },
+    { "name": "Vegetables", "icon": "🥦" },
+    { "name": "Dairy Products", "icon": "🥛" },
+    { "name": "Bakery Items", "icon": "🍞" },
+    { "name": "Rice and Grains", "icon": "🌾" },
+    { "name": "Pulses and Lentils", "icon": "🫘" },
+    { "name": "Snacks and Biscuits", "icon": "🍪" },
+    { "name": "Beverages and Juices", "icon": "🧃" },
+    { "name": "Cooking Oils", "icon": "🫒" },
+    { "name": "Spices and Masalas", "icon": "🌶️" },
+    { "name": "Personal Care", "icon": "🧴" },
+    { "name": "Household Essentials", "icon": "🧹" },
+    { "name": "Frozen Foods", "icon": "🧊" },
+    { "name": "Meat and Seafood", "icon": "🐟" }
+  ],
+  "products": [
+    {
+      "name": "Alphonso Mangoes",
+      "category": "Fruits",
+      "price": 189,
+      "originalPrice": 249,
+      "unit": "1 kg",
+      "quantity": 42,
+      "image": "https://images.unsplash.com/photo-1553279768-865429fa0078?w=640",
+      "description": "Sweet, sun-ripened Alphonso mangoes from the Konkan coast."
+    },
+    {
+      "name": "Farm Fresh Avocados",
+      "category": "Fruits",
+      "price": 149,
+      "originalPrice": 199,
+      "unit": "2 pcs",
+      "quantity": 28,
+      "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=640",
+      "description": "Creamy, perfectly ripe avocados, ready to enjoy."
+    },
+    {
+      "name": "Organic Strawberries",
+      "category": "Fruits",
+      "price": 99,
+      "originalPrice": 129,
+      "unit": "250 g",
+      "quantity": 55,
+      "image": "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=640",
+      "description": "Sweet little berries, picked fresh from local farms."
+    },
+    {
+      "name": "Baby Spinach",
+      "category": "Vegetables",
+      "price": 39,
+      "originalPrice": 49,
+      "unit": "200 g",
+      "quantity": 70,
+      "image": "https://images.unsplash.com/photo-1576045057995-568f588f82fb?w=640",
+      "description": "Tender baby leaves, washed and ready for your salad."
+    },
+    {
+      "name": "Heirloom Tomatoes",
+      "category": "Vegetables",
+      "price": 59,
+      "originalPrice": 75,
+      "unit": "500 g",
+      "quantity": 44,
+      "image": "https://images.unsplash.com/photo-1546094096-0df4bcaaa337?w=640",
+      "description": "Juicy, deep-red tomatoes, grown with care."
+    },
+    {
+      "name": "A2 Cow Milk",
+      "category": "Dairy Products",
+      "price": 68,
+      "originalPrice": 72,
+      "unit": "1 litre",
+      "quantity": 84,
+      "image": "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=640",
+      "description": "Fresh, creamy A2 milk delivered chilled."
+    },
+    {
+      "name": "Artisan Sourdough",
+      "category": "Bakery Items",
+      "price": 129,
+      "originalPrice": 149,
+      "unit": "400 g",
+      "quantity": 22,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=640",
+      "description": "Slow-fermented sourdough with a crisp, golden crust."
+    },
+    {
+      "name": "Stoneground Atta",
+      "category": "Rice and Grains",
+      "price": 179,
+      "originalPrice": 199,
+      "unit": "5 kg",
+      "quantity": 36,
+      "image": "https://images.unsplash.com/photo-1627485937980-221c88ac04f9?w=640",
+      "description": "Whole wheat flour, stone milled for everyday rotis."
+    },
+    {
+      "name": "Organic Chickpeas",
+      "category": "Pulses and Lentils",
+      "price": 99,
+      "originalPrice": 119,
+      "unit": "1 kg",
+      "quantity": 27,
+      "image": "https://images.unsplash.com/photo-1515543904379-3d757afe72e4?w=640",
+      "description": "Protein-rich chickpeas, cleaned and naturally dried."
+    },
+    {
+      "name": "Cold Pressed Orange Juice",
+      "category": "Beverages and Juices",
+      "price": 119,
+      "originalPrice": 149,
+      "unit": "750 ml",
+      "quantity": 19,
+      "image": "https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=640",
+      "description": "Freshly squeezed oranges. No added sugar, just sunshine."
+    }
+  ]
+}
